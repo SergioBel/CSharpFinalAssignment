@@ -1,0 +1,58 @@
+﻿@model FinalProjectCSharp.Models.Band
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Band</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BandName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BandName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MusicalGenre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MusicalGenre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Country)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Country)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BandMemembers)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BandMemembers)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InTour)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InTour)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BandID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
